@@ -29,7 +29,7 @@
                       AutoGenerateColumns="False"
                       IsReadOnly="True"
                       AlternatingRowBackground="LightCyan" VerticalScrollBarVisibility="Visible"
-                      Grid.Row="0"
+                      Grid.Row="0" FontFamily="Palatino Linotype"
                       >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Account" Binding="{Binding AccountName}"></DataGridTextColumn>
@@ -52,13 +52,13 @@
                 <RowDefinition Height="30"></RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Row="0">
-                <Label Content="Character:"/>
-                <Label Content="{Binding CharacterName}"/>
-                <Label Content="Wait (ms):"/>
-                <Label Content="{Binding WaitTimeMs}"/>
+                <Label Content="Character:" FontFamily="Palatino Linotype"/>
+                <Label Content="{Binding CharacterName}" FontFamily="Palatino Linotype"/>
+                <Label Content="Wait (ms):" FontFamily="Palatino Linotype"/>
+                <Label Content="{Binding WaitTimeMs}" FontFamily="Palatino Linotype"/>
             </StackPanel>
-            <TextBox AcceptsReturn="True" Text="{Binding CharacterLoginCommandListString}" Grid.Row="1" VerticalScrollBarVisibility="Auto" />
-            <Button Command="{Binding SaveCurrentLoginCmdsCommand}" Content="Save" Grid.Row="2" />
+            <TextBox AcceptsReturn="True" Text="{Binding CharacterLoginCommandListString}" Grid.Row="1" VerticalScrollBarVisibility="Auto" FontFamily="Palatino Linotype" />
+            <Button Command="{Binding SaveCurrentLoginCmdsCommand}" Content="Save" Grid.Row="2" FontFamily="Palatino Linotype" />
         </Grid>
     </Grid>
 </Window>

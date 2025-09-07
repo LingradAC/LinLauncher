@@ -10,11 +10,11 @@
         </Grid.RowDefinitions>
         <ScrollViewer>
             <ItemsControl>
-                <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Top" Height="179" Margin="10,10,0,0"><Span Foreground="Black" Language="en-us"><Run Text="Using this method of multi-clienting only requires a single install of AC"/></Span><LineBreak/><LineBreak/><Run Text="Locate your Documents\Asheron's Call\UserPreferences.ini and open with a text editor."/><LineBreak/><Run/><LineBreak/><Run Text="A button is included below that will attempt to open the file at it's default location."/><LineBreak/><Run/><LineBreak/><Span Foreground="Black" Language="en-us"><Run Text="Find [Net] and change ComputeUniquePort to True and save"/></Span></TextBlock>
-                <Button x:Name="btnDefaultPreferences" Content="Open Preferences Default Location" HorizontalAlignment="Stretch" VerticalAlignment="Top" Click="btnDefaultPreferences_Click"/>
+                <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Top" Height="179" Margin="10,10,0,0"><Span Foreground="Black" Language="en-us"><Run Text="Using this method of dual-logging only requires a single install of AC."/></Span><LineBreak/><LineBreak/><Run Text="Locate C:\Documents\Asheron's Call\UserPreferences.ini and open with a text editor."/><LineBreak/><Run/><LineBreak/><Run Text="Find [Net] and change ComputeUniquePort to True and save."/><LineBreak/><Run/><LineBreak/><Span Foreground="Black" Language="en-us"><Run Text="The button below will attempt to open UserPreferences.ini at the default location."/></Span></TextBlock>
+                <Button x:Name="btnDefaultPreferences" Content="Open UserPreferences.ini" HorizontalAlignment="Stretch" VerticalAlignment="Top" Click="btnDefaultPreferences_Click" FontFamily="Palatino Linotype"/>
                 <Image HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="261" Source="../Images/UserPreferences.png"/>
                 <Separator HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="281" BorderThickness="10" BorderBrush="#FF008BBF"/>
-                <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Open Decal - Options - Check &quot;Dual Log&quot; and Click Ok" VerticalAlignment="Top" Height="38" />
+                <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Open Decal - Options - Check &quot;Dual Log&quot; and Click Ok." VerticalAlignment="Top" Height="38" />
                 <Image HorizontalAlignment="Left" Height="261" VerticalAlignment="Top" Width="261" Source="../Images/DecalSetting.png"/>
                 <Image HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="255" Source="../Images/Credit.PNG"/>
             </ItemsControl>
@@ -26,10 +26,10 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <CheckBox x:Name="chkShowStartup" Grid.Column="0" Content="Show at Startup" HorizontalAlignment="Left" Margin="5 0 0 0" IsChecked="True" VerticalAlignment="Top"/>
-            <Button x:Name="btnUpdate" Width="65px" Grid.Column="1" Content="Update" HorizontalAlignment="Right" VerticalAlignment="Top" Click="btnUpdate_Click"/>
-            <Button x:Name="btnDiagnostics" Width="65px" Grid.Column="2" Content="Diagnostics" HorizontalAlignment="Right" VerticalAlignment="Top" Click="btnDiagnostics_Click"/>
-            <Button x:Name="btnOK" Content="Ok" Grid.Column="3" HorizontalAlignment="Right" Width="65px" VerticalAlignment="Top" Click="btnOK_Click"/>
+            <CheckBox x:Name="chkShowStartup" Grid.Column="0" Content="Show at Startup" HorizontalAlignment="Left" Margin="5 0 0 0" IsChecked="True" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+            <Button x:Name="btnUpdate" Width="65px" Grid.Column="1" Content="Update" HorizontalAlignment="Right" VerticalAlignment="Top" Click="btnUpdate_Click" FontFamily="Palatino Linotype"/>
+            <Button x:Name="btnDiagnostics" Width="65px" Grid.Column="2" Content="Diagnostics" HorizontalAlignment="Right" VerticalAlignment="Top" Click="btnDiagnostics_Click" FontFamily="Palatino Linotype"/>
+            <Button x:Name="btnOK" Content="Ok" Grid.Column="3" HorizontalAlignment="Right" Width="65px" VerticalAlignment="Top" Click="btnOK_Click" FontFamily="Palatino Linotype"/>
         </Grid>
     </Grid>
 </Window>

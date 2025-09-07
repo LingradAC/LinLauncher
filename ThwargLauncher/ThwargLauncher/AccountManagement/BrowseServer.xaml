@@ -12,7 +12,7 @@
                   FilteredItemsSource="{Binding Path=AllServers}"
                   AutoGenerateColumns="False"
                   CanUserAddRows="False"
-                  AlternatingRowBackground="Wheat">
+                  AlternatingRowBackground="Wheat" FontFamily="Palatino Linotype">
             <intellicontrols:IntelliGrid.Columns>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>

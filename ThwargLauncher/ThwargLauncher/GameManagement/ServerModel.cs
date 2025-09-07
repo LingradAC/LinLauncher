@@ -20,7 +20,7 @@ namespace ThwargLauncher
         public enum RodatEnum { On, Off };
         public enum SecureEnum { On, Off };
         public enum VisibilityEnum { Visible, Invisible };
-        public enum StatusEnum { Stable, Experimental, Development, Inactive, Shutdown, Undefined };
+        public enum StatusEnum { Experimental, Stable, Development, Undefined };
         public bool HasDiscordURL { get { return DiscordUrl != ""; } }
         public bool HasPlayerCountToolTip { get { return PlayerCountToolTip != ""; } }
         private int _playerCount = -1;

@@ -15,13 +15,13 @@
         <DataGrid HorizontalAlignment="Stretch" Margin="0,5,0,30" VerticalAlignment="Stretch"
                   ItemsSource="{Binding Path=AllAccounts}"
                   AutoGenerateColumns="False"
-                  AlternatingRowBackground="Wheat">
+                  AlternatingRowBackground="Wheat" FontFamily="Palatino Linotype">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=LostFocus}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Alias" Binding="{Binding Alias,Mode=TwoWay,UpdateSourceTrigger=LostFocus}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Priority" Binding="{Binding Priority,Mode=TwoWay,UpdateSourceTrigger=LostFocus}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="ApplyBtn"  Content="Apply" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="ApplyBtn_Click" Margin="0,0,10,10" />
+        <Button x:Name="ApplyBtn"  Content="Apply" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="ApplyBtn_Click" Margin="0,0,10,10" FontFamily="Palatino Linotype" />
     </Grid>
 </Window>

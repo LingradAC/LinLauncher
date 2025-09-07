@@ -11,14 +11,14 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" x:Name="btnAddServer" Command="{Binding AddServerCommand}"  Content="Add Server"/>
-            <Button Grid.Column="1" x:Name="btnBrowseServer" Command="{Binding BrowseServerCommand}"  Content="Browse Servers"/>
+            <Button Grid.Column="0" x:Name="btnAddServer" Command="{Binding AddServerCommand}"  Content="Add Server" FontFamily="Palatino Linotype"/>
+            <Button Grid.Column="1" x:Name="btnBrowseServer" Command="{Binding BrowseServerCommand}"  Content="Browse Servers" FontFamily="Palatino Linotype"/>
         </Grid>
         <DataGrid HorizontalAlignment="Stretch" Margin="0,0,0,5.2" VerticalAlignment="Stretch"
                   ItemsSource="{Binding Path=ServerList}"
                   AutoGenerateColumns="False"
                   CanUserAddRows="False" CanUserDeleteRows="True"
-                  AlternatingRowBackground="Wheat" BeginningEdit="DataGrid_BeginningEdit" PreviewKeyDown="DataGrid_PreviewKeyDown">
+                  AlternatingRowBackground="Wheat" BeginningEdit="DataGrid_BeginningEdit" PreviewKeyDown="DataGrid_PreviewKeyDown" FontFamily="Palatino Linotype">
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Style.Triggers>
